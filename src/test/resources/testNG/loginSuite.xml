@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test runner" parallel="classes" thread-count="1">
+    <listeners>
+        <listener class-name="com.lohika.bookshelf.testng.RetryListener"/>
+    </listeners>
+    <test name="Login Test">
+        <classes>
+            <class name="com.lohika.bookshelf.runners.LoginRunner"/>
+            <class name="com.lohika.bookshelf.runners.AddBookRunner"/>
+        </classes>
+    </test>
+</suite>
